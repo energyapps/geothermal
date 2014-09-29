@@ -22,6 +22,8 @@
 
 
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/cluster.css">
+<link rel="stylesheet" type="text/css" href="css/css_article.css">
 
 
 <!-- /End Merged CSS -->
@@ -49,10 +51,49 @@
 
       <!-- Begin Merged Markup.html partial Content -->
       
-        <h3>Hello World</h3>
-<h3>HTML content goes here </h3>
-<div id="master_container">
-	<div id="map"></div>
+        <div id="iframe_container">
+
+
+
+      <div id='map'>
+  <div id="title">Enhanced Geothermal Systems Favorability</div>
+  <div id="info-container">
+    <div id="info-box"><p></p></div>
+    <p class="close-overlay">CLOSE</p>
+  </div>
+</div>
+<div id='under-map'>
+  <div class="under-map-half" id='under-map-left'>
+    <div class="under-map-button position-1"><a>About the Data</a></div>
+    <div class="single-line under-map-button position-2"><a>What is EGS?</a></div>
+    <div class="under-map-button position-3"><a>More about Favorability</a></div>
+    <div >
+      <div class="info-bar position-1" id="bar-left"></div>
+      <div class="info-bar position-2" id="bar-center"></div>
+      <div class="info-bar position-3" id="bar-right"></div>  
+    </div>
+  </div>
+  <div class="under-map-half" id='under-map-right'>
+    <div id='legend-content'>
+      <div class='my-legend'>
+        <div class='legend-title'>Favorability of Deep EGS</div>
+        <div class='legend-scale'>
+          <ul class='legend-labels'>
+            <li><span style='background:#d73619;'></span>Most Favorable</li>
+            <li><span style='background:#F79E02;'></span></li>
+            <li><span style='background:#C86628;'></span></li>
+            <li><span style='background:#992E4F;'></span></li>
+            <li><span style='background:#792E4F;'></span>Least Favorable</li>
+            <li><span style='background:#5A2E4F;'></span>N/A*</li>            
+          </ul>
+        </div>
+<!--         <div class='legend-source'>Source: <a href="#link to source">Name of source</a></div>
+ -->      </div>
+    </div>
+  </div>
+</div>
+
+
 </div>
 
       <!-- /End Merged Content -->
@@ -63,12 +104,16 @@
 
 <!-- Javascript references -->
   <!-- Libraries such as jquery, mapbox, highcharts. Can (probably should) be referenced from external setting-->
+<script type="text/javascript" src="js/jquery.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js'></script>
 
   <!-- Data (JSON, etc) -->
+<script type="text/javascript" src="js/geothermalpoints.js"></script>
   
 
   <!-- Scripts (get to work) like script.js -->
+  
+  <script type="text/javascript" src="js/clustr1.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 
 <!-- /End JS references -->

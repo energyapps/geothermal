@@ -1,3 +1,5 @@
+
+
 /********************************************
 
 	Styles to be added to energy.gov in order 
@@ -7,14 +9,331 @@
 ********************************************/
 
 
+#sidebar-right{display:none !important;}
+#main-content{width:100% !important;}
+
 /*+++++++++++++++++++++++++++
 Map
 ++++++++++++++++++++++++++++++++++++++*/
- #master_container {
- 	font-family: 'Avenir LT W02 35 Light',verdana,sans-serif;
-    text-transform: none !important;
-    position: relative;
-    width: 100%;
-    height: 800px;
- }
- #map { position:absolute; top:0; height: 500px; width:99%; border: 4px solid #333;}
+
+
+/*#scroll-area{width:40px;height:100%;position:absolute;z-index:10;right:0px;}*/
+path {
+      stroke: 1px;
+    }
+.leaflet-popup-tip {
+  width:0 !important;
+  height:0 !important;
+  margin:0 !important;
+  border-left:10px solid transparent !important;
+  border-right:10px solid transparent !important; 
+  border-top:10px solid #fff !important;
+  box-shadow:none !important;
+  }
+
+.leaflet-popup-tip-container {
+  overflow: visible !important;
+}
+
+.leaflet-popup-tip {
+  background: transparent;
+  -webkit-transform: rotate(0deg);
+}
+
+/********************
+Styles P
+****************************/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/******************************
+	Body and map frame
+******************************/
+body { 
+	margin:0; 
+	padding:0; 
+}
+
+/*#map { 
+	position:absolute; 
+	top: 0px;
+	width:100%; 
+	height: 400px;
+}*/
+
+#map{width:100%;height:500px;}
+
+
+/************************
+Tooltip css
+************************/
+
+a.leaflet-popup-close-button {
+	display: none !important;
+}
+
+
+#a2 {
+	color: teal;
+	font-size: 40px;
+}
+
+/******************************
+ Cursor fix 
+ ************************/
+.leaflet-tile {
+	cursor: default;
+}
+
+/********************************
+Under Map Divs
+********************************/
+#under-map {
+	/*float: left;
+	clear: both;
+	width: 100%;
+	*/
+}
+
+.under-map-half {
+	position: relative;
+	float: left;	
+	height: 100%;
+}
+
+#under-map-left {
+
+}	
+#under-map-right {
+	float: right;
+	width: 40%		
+}
+.under-map-button {
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 100px;
+	min-height: 40px;
+	float: left;
+	text-align: center; 
+	background-color: #0d393d;
+	color: #fff;
+	border: 10px solid #53878D;
+	border-radius: 20px;
+	font-family:'Avenir LT W02 35 Light';
+	letter-spacing: 1px;
+}
+
+.under-map-button:hover {
+	border: 10px solid #7bacb1;
+}
+
+.under-map-button.active {
+	background-color: #216068;
+	border: 10px solid #7bacb1;
+
+}
+
+.under-map-button.active:hover {
+		border: 10px solid #7bacb1;
+
+}
+
+.under-map-button:hover {
+	border: 10px solid #7bacb1;
+}
+
+.under-map-button a {
+	line-height: 20px;
+
+}
+
+.under-map-button a:hover {
+	text-decoration: none;
+	cursor: pointer;
+	letter-spacing: 0px !important;
+	color: #fff;
+}
+
+.single-line {
+	line-height: 40px !important
+}
+
+/********************************
+Legend
+********************************/
+.my-legend .legend-title {
+  text-align: center;
+  font-size: 14px;
+  padding-right: 10px;
+  padding-top: 10px;
+  width: 100%;
+  float: right;
+  color: #444;
+  font-family:'Avenir LT W02 35 Light'
+}
+.my-legend .legend-scale ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+  list-style: none;
+  width: 100%;
+  }
+.my-legend .legend-scale ul li {
+  display: block;
+  float: left;
+  width: 16.6%;  
+  text-align: center;
+  font-size: 80%;
+  list-style: none;
+  color: #444;
+  padding-top: 2px;
+  line-height: 110%;
+  }
+
+.my-legend ul.legend-labels li span {
+  display: block;
+  float: right;
+  height: 10px;
+  width: 100%;
+  border-left: 2px solid #fff;
+  margin-bottom: 5px;
+  }
+.my-legend a {
+  color: #777;
+  }
+
+/********************
+info box
+**************************/
+#info-container.active {
+	position:	absolute;
+	display: block;
+	bottom: 10px;
+	left: 10px;
+	width: 380px;
+	z-index: 2;
+	padding: 10px;
+	background-color: #fff;	
+	border: 10px solid #7bacb1;
+	border-radius: 20px;
+}
+
+#info-container {
+	display: none;
+}
+
+#info-container p {
+	font-size: 12px;
+	line-height: 14px;
+	border-bottom: 0px !important;
+	color: #777;
+	padding: 0px;
+	margin: 0px;
+}
+
+.info-bar.active {
+	position: absolute;
+	top: -10px;		
+	z-index: 2000;
+	width: 0px;
+	height: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;	
+	border-top: 10px solid #7bacb1;
+}
+
+
+.close-overlay {
+	text-align: right;
+	font-size: 10px;
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	line-height: 10px;
+	color: #777 !important;
+}
+
+.close-overlay:hover {
+	color: #333 !important;
+	font-weight: bold !important;
+	text-decoration: none !important;
+	cursor: pointer;
+}
+
+#bar-left {left: 60px;}
+#bar-center {left: 190px;}
+#bar-right {left: 320px;}
+
+
+/*******************
+				get rid of attribution
+********************/
+
+a.mapbox-info-toggle.mapbox-icon.mapbox-icon-info {
+	display: none !important;
+}
+
+/*******************
+		Title
+********************/
+#map div#title {
+	font-family:'Avenir LT W02 35 Light';
+	font-size: 30px;
+	color: #fff;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-shadow: 0 2px 3px #333,0 -1px 3px #333;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+/*body.one-sidebar #map div#title { display: none;}*/
