@@ -12,8 +12,34 @@ map.addControl( L.control.zoom({position: 'topright'}) );
 
 var class_current = 0;
 
+(function ($) { 
 
+$(function () {
+        $('#alaska').click(function(e) {
+            map.fitBounds([
+            [71.3516, -188.90491],[51.3516, -129.986]
+            ]);
 
+        });
+        $('#hawaii').click(function(e) {
+            map.fitBounds([
+            [22.2289, -154.8],[18.948, -159.764]
+            ]);
+            // selectstate();
+
+        });
+        $('#usa').click(function(e) {
+            map.fitBounds([
+            [42.461, -56.979],[32.536, -134.4]
+            ]);
+            // var e = null;
+            // $('.legendz').removeClass('active')
+            // p = 0;
+            // onClickyhigh();
+            // selectstate();
+        });
+    });
+}(jQuery));  
 
 var markers = new L.MarkerClusterGroup({
     maxClusterRadius:  45

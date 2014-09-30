@@ -337,3 +337,90 @@ a.mapbox-info-toggle.mapbox-icon.mapbox-icon-info {
 }
 
 /*body.one-sidebar #map div#title { display: none;}*/
+
+
+/************
+Bars and stuff, upper right
+*********/
+.leaflet-bar {
+	border-radius: 0 !important;
+	background-color: white;
+	border: 0 !important;
+	margin-left: 0px;
+	-moz-box-shadow: 0 0 5px #111;
+			-webkit-box-shadow: 0 0 5px #111;
+			box-shadow: 0 0 5px #111;
+}
+
+.leaflet-bar a, .leaflet-bar a:hover {
+	background-color: #fff !important;
+	border-radius: 0 !important;
+	color: #1e1e1e !important;
+	width: 56px !important;
+	border-color: #333 !important;
+
+}
+
+.leaflet-bar a:hover {
+	background-color: #AFAFAF !important;
+	border-radius: 0 !important	;
+	}
+
+.leaflet-bar span, .leaflet-bar span:hover {
+	background-color: transparent !important;
+	border-radius: 0 !important;
+	color: #1e1e1e !important;
+	/*width: 56px !important;*/
+	border-bottom: 1px solid #333 !important;
+	border-color: #333 !important;
+	display: block;
+}
+
+.leaflet-bar span:last-child {
+	border-bottom: 0px !important;
+}
+
+.leaflet-left .leaflet-control {
+	margin-left: 0px !important;
+	}
+
+.leaflet-bar span:hover {
+	background-color: #AFAFAF !important;
+	border-radius: 0 !important	;
+	cursor: pointer;
+	}
+
+
+	
+/**********
+states
+********/
+
+#alaska {
+	padding-bottom:5px; padding-top: 5px; 
+}
+
+#hawaii {
+	padding-top:8px; padding-bottom: 8px;
+}
+
+#usa {
+	padding-top:8px; padding-bottom: 8px; padding-left: 14px; padding-right: 12px;
+}
+
+.leaflet-control-container span img {
+	width: 30px !important;
+}
+
+body.node-type-map #usa {
+	padding-bottom: 4px !important;
+}
+
+body.node-type-map #alaska {
+	padding-left: 15px;
+	padding-bottom: 2px !important;
+} 
+body.node-type-map #hawaii {
+	padding-left: 11px;
+	padding-bottom: 4px !important;
+} 
