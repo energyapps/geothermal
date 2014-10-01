@@ -153,7 +153,7 @@ Under Map Divs
 }	
 #under-map-right {
 	float: right;
-	width: 40%		
+	width: 50%		
 }
 .under-map-button {
 	margin-left: 10px;
@@ -162,31 +162,33 @@ Under Map Divs
 	min-height: 40px;
 	float: left;
 	text-align: center; 
-	background-color: #0d393d;
+	background-color: #28455a;;
 	color: #fff;
-	border: 10px solid #53878D;
+	border: 10px solid #477ca1;
+	/*background-color: rgb(63,110,143);
+	border: 10px solid #28455a;*/
 	border-radius: 20px;
 	font-family:'Avenir LT W02 35 Light';
 	letter-spacing: 1px;
 }
 
 .under-map-button:hover {
-	border: 10px solid #7bacb1;
+	border: 10px solid #8bb1cc;
 }
 
 .under-map-button.active {
-	background-color: #216068;
-	border: 10px solid #7bacb1;
+	background-color: rgb(63,110,143);
+	border: 10px solid #8bb1cc;
 
 }
 
 .under-map-button.active:hover {
-		border: 10px solid #7bacb1;
+		border: 10px solid #8bb1cc;
 
 }
 
 .under-map-button:hover {
-	border: 10px solid #7bacb1;
+	border: 10px solid #8bb1cc;
 }
 
 .under-map-button a {
@@ -228,7 +230,7 @@ Legend
 .my-legend .legend-scale ul li {
   display: block;
   float: left;
-  width: 16.6%;  
+  width: 5.88%;  
   text-align: center;
   font-size: 80%;
   list-style: none;
@@ -242,7 +244,7 @@ Legend
   float: right;
   height: 10px;
   width: 100%;
-  border-left: 2px solid #fff;
+  /*border-left: 2px solid #fff;*/
   margin-bottom: 5px;
   }
 .my-legend a {
@@ -261,7 +263,7 @@ info box
 	z-index: 2;
 	padding: 10px;
 	background-color: #fff;	
-	border: 10px solid #7bacb1;
+	border: 10px solid #8bb1cc;
 	border-radius: 20px;
 }
 
@@ -286,7 +288,7 @@ info box
 	height: 0px;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;	
-	border-top: 10px solid #7bacb1;
+	border-top: 10px solid #8bb1cc;
 }
 
 
@@ -391,17 +393,17 @@ Bars and stuff, upper right
 	}
 
 
-	
+
 /**********
 states
 ********/
 
 #alaska {
-	padding-bottom:5px; padding-top: 5px; 
+	padding-bottom:5px; padding-top: 5px; padding-left: 14px;
 }
 
 #hawaii {
-	padding-top:8px; padding-bottom: 8px;
+	padding-top:8px; padding-bottom: 8px; padding-left: 8px;
 }
 
 #usa {
@@ -424,3 +426,7 @@ body.node-type-map #hawaii {
 	padding-left: 11px;
 	padding-bottom: 4px !important;
 } 
+
+.leaflet-control-attribution.leaflet-control {
+	display: none !important;
+}

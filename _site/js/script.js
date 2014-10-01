@@ -1,5 +1,5 @@
 // Visit https://www.mapbox.com/mapbox.js/overview/ for documentation and examples
-  var map = L.mapbox.map('map', 'energy.ggnnl2il', {
+  var map = L.mapbox.map('map', 'energy.jlaen6p4', {
       detectRetina: true,
       zoomControl: false,
       gridControl: false, //turns off automatic tooltips ??
@@ -52,7 +52,7 @@ var markers = new L.MarkerClusterGroup({
         var marker = L.marker(new L.LatLng(a.geometry.coordinates[1], a.geometry.coordinates[0]), {
             icon: L.mapbox.marker.icon({
               'marker-symbol': '', 
-              'marker-color': 'F79E02',
+              'marker-color': 'D73619',
               'marker-size':'small'
             }),
             // title: 'SUP'

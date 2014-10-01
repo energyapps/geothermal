@@ -6,7 +6,11 @@
 
 @media (max-width:960px){}
 
-@media (max-width:790px){}
+@media (max-width:800px){
+	#under-map-right {
+		width: 40%		
+	}
+}
 
 @media (max-width:700px){
 	#map {
@@ -47,6 +51,8 @@ legend
 }
 
 @media (max-width:570px){
+.leaflet-right .leaflet-control { margin-right: 0px}
+
 	#map{
 		height:320px !important;
 	}
@@ -81,7 +87,7 @@ legend
 		margin-left: 0px;
 	}
 
-	.position-1 {
+	.position-2, .position-1 {
 		line-height: 40px;
 	}
 
