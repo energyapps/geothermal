@@ -44,10 +44,12 @@ info box
 /********************
 legend
 **************************/
-	#under-map-right, #under-map-left {
-	width: 100%		
+	#under-map-right  {
+		width: 100%;	
 	}
-
+	#under-map-left {
+		width: 102%;
+	}
 }
 
 @media (max-width:570px){
@@ -92,10 +94,9 @@ legend
 	}
 
 	#info-container.active {
-		width: 100%;
+		width: 90%;
 		top: 0px !important;
-		left: 0px;
-		z-index: 10000;
+		left: 0px;		
 		border-radius: 0;
 	}
 }

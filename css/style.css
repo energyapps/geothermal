@@ -260,7 +260,7 @@ info box
 	bottom: 10px;
 	left: 10px;
 	width: 380px;
-	z-index: 2;
+	z-index: 10000;
 	padding: 10px;
 	background-color: #fff;	
 	border: 10px solid #8bb1cc;
