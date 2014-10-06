@@ -42,7 +42,7 @@ $(function () {
 }(jQuery));  
 
 var markers = new L.MarkerClusterGroup({
-    maxClusterRadius:  45
+    maxClusterRadius:  30
 });
 
  for (var i = 0; i < points.features.length; i++) {
@@ -50,14 +50,14 @@ var markers = new L.MarkerClusterGroup({
         var a = points.features[i];
         // var title = a[2];
         var marker = L.marker(new L.LatLng(a.geometry.coordinates[1], a.geometry.coordinates[0]), {
-            icon: L.mapbox.marker.icon({
-              'marker-symbol': '', 
+            icon: L.mapbox.marker.icon({              
+              'marker-symbol': 'star', 
               'marker-color': 'D73619',
               'marker-size':'small'
             }),
             // title: 'SUP'
         });
-        marker.bindPopup('<h1>' + points.features[i].properties.Name + '</h1><p>' + points.features[i].properties.Temp_C_ML + '</p>');
+        marker.bindPopup('<h1>' + points.features[i].properties.Project + '</h1><p>' + points.features[i].properties.Project_Ph + '</p>');
         markers.addLayer(marker);
     }
     map.addLayer(markers);
