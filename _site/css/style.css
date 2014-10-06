@@ -430,3 +430,15 @@ body.node-type-map #hawaii {
 .leaflet-control-attribution.leaflet-control {
 	display: none !important;
 }
+
+
+.icon_list	{
+	width: 55px;
+	height: 35px;
+}
+
+.icon_list img{
+	left: 16px;
+	top: 3px;
+	position: relative;
+}
