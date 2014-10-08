@@ -134,15 +134,37 @@ var markers = new L.MarkerClusterGroup({
     map.addLayer(markers);
 
 
-
-
 // data for info box
 
 var info_data = [
+"<div id='info-box'>"+
+"        <div class='icon_box'>"+
+"        <div class='icon_list'>"+
+"          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-circle+D73619.png'></div>"+
+"          <div class='icon_text'><p>Phase 1</p></div>"+
+"        </div>"+
+"        <div class='icon_list'>"+
+"          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-triangle+D73619.png'></div>"+
+"          <div class='icon_text'><p>Phase 2</p></div>"+
+"        </div>"+
+"        <div class='icon_list'>"+
+"          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-square+D73619.png'></div>"+
+"          <div class='icon_text'><p>Phase 3</p></div>"+
+"        </div>"+
+"        <div class='icon_list'>"+
+"          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-star+D73619.png'></div>"+
+"          <div class='icon_text'><p>Phase 4</p></div>"+
+"        </div>"+
+"        <div class='icon_list'>"+
+"          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-fire-station+D73619.png'></div>"+
+"          <div class='icon_text'><p>Existing Geothermal Plant </p></div>"+
+"        </div>"+
+"      </div>"+
+"    </div>",
 "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>",
 "<p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>",
-"<p>pizza party<p>"]
-console.log(info_data[0])
+"<p>pizza party<p>"];
+// console.log(info_data[0])
 // toggle and switch
 
 (function ($) { 

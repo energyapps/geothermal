@@ -170,6 +170,7 @@ Under Map Divs
 	border-radius: 20px;
 	font-family:'Avenir LT W02 35 Light';
 	letter-spacing: 1px;
+	cursor: pointer;
 }
 
 .under-map-button:hover {
@@ -259,7 +260,7 @@ info box
 	display: block;
 	bottom: 10px;
 	left: 10px;
-	width: 380px;
+	max-width: 380px;
 	z-index: 10000;
 	padding: 10px;
 	background-color: #fff;	
@@ -431,14 +432,31 @@ body.node-type-map #hawaii {
 	display: none !important;
 }
 
+#icon_box {
 
-.icon_list	{
-	width: 55px;
-	height: 35px;
+}
+
+.icon_list {
+	width: 100%;
+	height: 33px;
+}
+
+.icon_list_item	{
+	float: left;
+	width: 35px;
+	height: 33px;
+}
+
+.icon_text {
+	float: left;
+}
+
+.icon_text p {
+	margin-top: 10px !important;
 }
 
 .icon_list img{
-	left: 16px;
+	left: 0px;
 	top: 3px;
 	position: relative;
 }
