@@ -47,7 +47,6 @@ var markers = new L.MarkerClusterGroup({
 
  
   for (var i = 0; i <  geo_plants.features.length; i++) {
-    console.log('hello')
      var a = geo_plants.features[i];
      var marker = L.marker(new L.LatLng(a.geometry.coordinates[1], a.geometry.coordinates[0]), {
 
@@ -58,8 +57,10 @@ var markers = new L.MarkerClusterGroup({
               }),
               // title: 'SUP'
           });
-
-          marker.bindPopup('<h1>' + points.features[i].properties.Project + '</h1><p>' + points.features[i].properties.Project_Ph + '</p>');
+      var myString = a.properties.Operationa;
+      var year = myString.substr(0, myString.length-12);
+      console.log(year);
+          marker.bindPopup('<h1>' + geo_plants.features[i].properties.PlantName + '</h1><p>Year Opened: ' + year + '</p>');
           markers.addLayer(marker);
   }
 
