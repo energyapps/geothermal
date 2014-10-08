@@ -140,23 +140,23 @@ var info_data = [
 "<div id='info-box'>"+
 "        <div class='icon_box'>"+
 "        <div class='icon_list'>"+
-"          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-circle+D73619.png'></div>"+
+"          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-circle+D73619@2x.png'></div>"+
 "          <div class='icon_text'><p>Phase 1</p></div>"+
 "        </div>"+
 "        <div class='icon_list'>"+
-"          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-triangle+D73619.png'></div>"+
+"          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-triangle+D73619@2x.png'></div>"+
 "          <div class='icon_text'><p>Phase 2</p></div>"+
 "        </div>"+
 "        <div class='icon_list'>"+
-"          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-square+D73619.png'></div>"+
+"          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-square+D73619@2x.png'></div>"+
 "          <div class='icon_text'><p>Phase 3</p></div>"+
 "        </div>"+
 "        <div class='icon_list'>"+
-"          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-star+D73619.png'></div>"+
+"          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-star+D73619@2x.png'></div>"+
 "          <div class='icon_text'><p>Phase 4</p></div>"+
 "        </div>"+
 "        <div class='icon_list'>"+
-"          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-fire-station+D73619.png'></div>"+
+"          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-fire-station+D73619@2x.png'></div>"+
 "          <div class='icon_text'><p>Existing Geothermal Plant </p></div>"+
 "        </div>"+
 "      </div>"+
