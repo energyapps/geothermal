@@ -5,7 +5,7 @@
       gridControl: false, //turns off automatic tooltips ??
       scrollWheelZoom:false,
       minZoom: 3,
-      maxZoom: 9
+      maxZoom: 12
   }).setView([38.99, -98.40], 4);
 
 map.addControl( L.control.zoom({position: 'topright'}) );
@@ -45,13 +45,31 @@ var markers = new L.MarkerClusterGroup({
     maxClusterRadius:  30
 });
 
+ 
+  for (var i = 0; i <  geo_plants.features.length; i++) {
+    console.log('hello')
+     var a = geo_plants.features[i];
+     var marker = L.marker(new L.LatLng(a.geometry.coordinates[1], a.geometry.coordinates[0]), {
+
+              icon: L.mapbox.marker.icon({              
+                'marker-symbol': 'fire-station', 
+                'marker-color': 'D73619',
+                'marker-size':'medium'
+              }),
+              // title: 'SUP'
+          });
+
+          marker.bindPopup('<h1>' + points.features[i].properties.Project + '</h1><p>' + points.features[i].properties.Project_Ph + '</p>');
+          markers.addLayer(marker);
+  }
+
+
  for (var i = 0; i < points.features.length; i++) {
-  console.log('d')
+  // console.log('d')
         var a = points.features[i];
         // var title = a[2];
         
         if (a.properties.Project_Ph == "Phase 1") {
-          console.log('heeee')
           var marker = L.marker(new L.LatLng(a.geometry.coordinates[1], a.geometry.coordinates[0]), {
 
               icon: L.mapbox.marker.icon({              
@@ -67,7 +85,6 @@ var markers = new L.MarkerClusterGroup({
         }
 
         else if (a.properties.Project_Ph == "Phase 2") {
-          console.log('heeee')
           var marker = L.marker(new L.LatLng(a.geometry.coordinates[1], a.geometry.coordinates[0]), {
 
               icon: L.mapbox.marker.icon({              
@@ -82,7 +99,6 @@ var markers = new L.MarkerClusterGroup({
           markers.addLayer(marker);
         }
         else if (a.properties.Project_Ph == "Phase 3") {
-          console.log('heeee')
           var marker = L.marker(new L.LatLng(a.geometry.coordinates[1], a.geometry.coordinates[0]), {
 
               icon: L.mapbox.marker.icon({              
@@ -98,7 +114,6 @@ var markers = new L.MarkerClusterGroup({
         }
 
         else if (a.properties.Project_Ph == "Phase 4") {
-          console.log('heeee')
           var marker = L.marker(new L.LatLng(a.geometry.coordinates[1], a.geometry.coordinates[0]), {
 
               icon: L.mapbox.marker.icon({              

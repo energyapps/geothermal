@@ -59,24 +59,25 @@
         <span id="hawaii" href=""><img src="img/hawaii.png"></span>
         <span id="alaska" href=""><img src="img/alaska.png"></span>
       </div>
-      <div style="top: 65px;" class="leaflet-control-zoom leaflet-bar leaflet-control">
-        <span class="icon_list" href=""><img src="http://a.tiles.mapbox.com/v3/marker/pin-s-circle+D73619.png"></span>
-        <span class="icon_list" href=""><img src="http://a.tiles.mapbox.com/v3/marker/pin-s-triangle+D73619.png"></span>
-        <span class="icon_list" href=""><img src="http://a.tiles.mapbox.com/v3/marker/pin-s-square+D73619.png"></span>
-        <span class="icon_list" href=""><img src="http://a.tiles.mapbox.com/v3/marker/pin-s-star+D73619.png"></span>
-      </div>
     </div>  
     <div id="title">Geothermal Map</div>
     <div id="info-container">
-      <div id="info-box"><p></p></div>
+      <div id="info-box">
+        <div class="leaflet-control-zoom leaflet-bar leaflet-control">
+          <span class="icon_list" href=""><img src="http://a.tiles.mapbox.com/v3/marker/pin-s-circle+D73619.png"></span>
+          <span class="icon_list" href=""><img src="http://a.tiles.mapbox.com/v3/marker/pin-s-triangle+D73619.png"></span>
+          <span class="icon_list" href=""><img src="http://a.tiles.mapbox.com/v3/marker/pin-s-square+D73619.png"></span>
+          <span class="icon_list" href=""><img src="http://a.tiles.mapbox.com/v3/marker/pin-s-star+D73619.png"></span>
+        </div>
+      </div>
       <p class="close-overlay">CLOSE</p>
     </div>
   </div>
   <div id='under-map'>
     <div class="under-map-half" id='under-map-left'>
-      <div class="under-map-button position-1"><a>About the Data</a></div>
-      <div class="under-map-button position-2"><a>What is Heat Flow?</a></div>
-      <div class="under-map-button position-3"><a>More about Favorability</a></div>
+      <div class="under-map-button position-1"><a>What is Heat Flow?</a></div>
+      <div class="under-map-button position-2"><a>About the Points</a></div>
+      <div class="under-map-button position-3"><a>About the Data</a></div>
       <div >
         <div class="info-bar position-1" id="bar-left"></div>
         <div class="info-bar position-2" id="bar-center"></div>
@@ -96,21 +97,21 @@
               <li><span style='background:#792E4F;'></span>Least Favorable</li>
               <li><span style='background:#5A2E4F;'></span>N/A*</li>      -->
 <li><span style='background-color:#2C7BB6;'></span>30</li>
-<li><span style='background-color:#458AB7;'></span>35</li>
-<li><span style='background-color:#5E9AB9;'></span>40</li>
-<li><span style='background-color:#77AABA;'></span>45</li>
-<li><span style='background-color:#90BABC;'></span>50</li>
-<li><span style='background-color:#A9CABE;'></span>55</li>
-<li><span style='background-color:#C2DABF;'></span>60</li>
-<li><span style='background-color:#DBEAC1;'></span>65</li>
-<li><span style='background-color:#F5FAC3;'></span>70</li>
-<li><span style='background-color:#F1E1AD;'></span>75</li>
-<li><span style='background-color:#EDC998;'></span>80</li>
-<li><span style='background-color:#E9B083;'></span>85</li>
-<li><span style='background-color:#E6986E;'></span>90</li>
-<li><span style='background-color:#E27F58;'></span>95</li>
-<li><span style='background-color:#DE6743;'></span>100</li>
-<li><span style='background-color:#DA4E2E;'></span>150</li>
+<li><span style='background-color:#5494B8;'></span>35</li>
+<li><span style='background-color:#7CADBB;'></span>40</li>
+<li><span style='background-color:#A4C7BD;'></span>45</li>
+<li><span style='background-color:#CCE0C0;'></span>50</li>
+<li><span style='background-color:#F5FAC3;'></span>55</li>
+<li><span style='background-color:#F4E9A8;'></span>60</li>
+<li><span style='background-color:#F4D98E;'></span>65</li>
+<li><span style='background-color:#F3C874;'></span>70</li>
+<li><span style='background-color:#F3B85A;'></span>75</li>
+<li><span style='background-color:#EFA550;'></span>80</li>
+<li><span style='background-color:#EB9247;'></span>85</li>
+<li><span style='background-color:#E7803E;'></span>90</li>
+<li><span style='background-color:#E36D34;'></span>95</li>
+<li><span style='background-color:#DF5B2B;'></span>100</li>
+<li><span style='background-color:#DB4822;'></span>150</li>
 <li><span style='background-color:#D73619;'></span>250</li>
 
             </ul>
@@ -135,7 +136,7 @@
 
   <!-- Data (JSON, etc) -->
 <script type="text/javascript" src="js/geothermalpoints2.js"></script>
-  
+<script type="text/javascript" src="js/geo_plants.js"></script>  
 
   <!-- Scripts (get to work) like script.js -->
   
