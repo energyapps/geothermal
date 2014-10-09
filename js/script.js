@@ -6,7 +6,9 @@
       scrollWheelZoom:false,
       minZoom: 3,
       maxZoom: 12
-  }).setView([38.99, -98.40], 4);
+  }).fitBounds([
+            [42.461, -56.979],[32.536, -134.4]
+            ]);
 
 map.addControl( L.control.zoom({position: 'topright'}) );
 
