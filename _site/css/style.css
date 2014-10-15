@@ -1,3 +1,27 @@
+#info-box p {
+    padding-bottom: 10px !important;
+}
+
+#info-box p:last-child {
+	padding-bottom: 0 !important;
+}
+
+body.node-type-map .legend-title {
+    color: #fff !important;
+}
+
+body.node-type-map .my-legend .legend-scale ul li {
+    color: #fff !important;
+}
+
+.leaflet-control-zoom-in, .leaflet-control-zoom-out {
+    text-decoration: none !important;
+}
+
+.leaflet-popup-tip {
+    margin-left: 10px !important;
+}
+
 
 
 /********************************************
@@ -24,7 +48,7 @@ path {
 .leaflet-popup-tip {
   width:0 !important;
   height:0 !important;
-  margin:0 !important;
+  margin:0;
   border-left:10px solid transparent !important;
   border-right:10px solid transparent !important; 
   border-top:10px solid #fff !important;
@@ -276,9 +300,17 @@ info box
 	font-size: 12px;
 	line-height: 14px;
 	border-bottom: 0px !important;
-	color: #777;
+	color: rgb(68, 68, 68);
 	padding: 0px;
 	margin: 0px;
+}
+
+#info-container span {
+	font-size: 12px;
+	line-height: 14px;
+	border-bottom: 0px !important;
+	color: rgb(68, 68, 68);
+		
 }
 
 .info-bar.active {
@@ -474,3 +506,4 @@ body.node-type-map #hawaii {
 	width: 20px;
 	height: 50px;
 }
+

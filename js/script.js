@@ -62,7 +62,7 @@ var markers = new L.MarkerClusterGroup({
       var myString = a.properties.Operationa;
       var year = myString.substr(0, myString.length-12);
       console.log(year);
-          marker.bindPopup('<h1>' + geo_plants.features[i].properties.PlantName + '</h1><p>Year Opened: ' + year + '</p>');
+          marker.bindPopup('<h2>' + geo_plants.features[i].properties.PlantName + '</h2><p>Year Opened: ' + year + '</p>');
           markers.addLayer(marker);
   }
 
@@ -83,7 +83,7 @@ var markers = new L.MarkerClusterGroup({
               // title: 'SUP'
           });
 
-          marker.bindPopup('<h1>' + points.features[i].properties.Project + '</h1><p>' + points.features[i].properties.Project_Ph + '</p>');
+          marker.bindPopup('<h2>' + points.features[i].properties.Project + '</h2><p>' + points.features[i].properties.Project_Ph + '</p>');
           markers.addLayer(marker);
         }
 
@@ -98,7 +98,7 @@ var markers = new L.MarkerClusterGroup({
               // title: 'SUP'
           });
 
-          marker.bindPopup('<h1>' + points.features[i].properties.Project + '</h1><p>' + points.features[i].properties.Project_Ph + '</p>');
+          marker.bindPopup('<h2>' + points.features[i].properties.Project + '</h2><p>' + points.features[i].properties.Project_Ph + '</p>');
           markers.addLayer(marker);
         }
         else if (a.properties.Project_Ph == "Phase 3") {
@@ -112,7 +112,7 @@ var markers = new L.MarkerClusterGroup({
               // title: 'SUP'
           });
 
-          marker.bindPopup('<h1>' + points.features[i].properties.Project + '</h1><p>' + points.features[i].properties.Project_Ph + '</p>');
+          marker.bindPopup('<h2>' + points.features[i].properties.Project + '</h2><p>' + points.features[i].properties.Project_Ph + '</p>');
           markers.addLayer(marker);
         }
 
@@ -127,7 +127,7 @@ var markers = new L.MarkerClusterGroup({
               // title: 'SUP'
           });
 
-          marker.bindPopup('<h1>' + points.features[i].properties.Project + '</h1><p>' + points.features[i].properties.Project_Ph + '</p>');
+          marker.bindPopup('<h2>' + points.features[i].properties.Project + '</h2><p>' + points.features[i].properties.Project_Ph + '</p>');
           markers.addLayer(marker);
         };
 
@@ -143,19 +143,19 @@ var info_data = [
 "        <div class='icon_box'>"+
 "        <div class='icon_list'>"+
 "          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-circle+D73619@2x.png'></div>"+
-"          <div class='icon_text'><p>Phase 1</p></div>"+
+"          <div class='icon_text'><p>Phase 1: Resource Procurement and Identification</p></div>"+
 "        </div>"+
 "        <div class='icon_list'>"+
 "          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-triangle+D73619@2x.png'></div>"+
-"          <div class='icon_text'><p>Phase 2</p></div>"+
+"          <div class='icon_text'><p>Phase 2: Resource Exploration and Confirmation</p></div>"+
 "        </div>"+
 "        <div class='icon_list'>"+
 "          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-square+D73619@2x.png'></div>"+
-"          <div class='icon_text'><p>Phase 3</p></div>"+
+"          <div class='icon_text'><p>Phase 3: Permitting and Initial Development</p></div>"+
 "        </div>"+
 "        <div class='icon_list'>"+
 "          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-star+D73619@2x.png'></div>"+
-"          <div class='icon_text'><p>Phase 4</p></div>"+
+"          <div class='icon_text'><p>Phase 4: Resource Production and Power Plant Construction</p></div>"+
 "        </div>"+
 "        <div class='icon_list'>"+
 "          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-fire-station+D73619@2x.png'></div>"+
@@ -163,9 +163,16 @@ var info_data = [
 "        </div>"+
 "      </div>"+
 "    </div>",
-"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>",
-"<p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>",
-"<p>pizza party<p>"];
+
+"<p>Information about developing geothermal projects is provided by the Geothermal Energy Association (GEA). GEA defined ‘Phases 1-4’ are shown while those defined as ‘Prospect’ or ‘N/A’ are not displayed. Some plant locations are approximations. Terms and definitions for the stages of geothermal project development can be found <a target='_blank' href='http://geo-energy.org/pdf/NewGeothermalTermsandDefinitions_January2011.pdf'>here</a>.</p>" +
+"<p>Further information on the geothermal Heat Flow resource layer can be found <a target='_blank' href='http://www.smu.edu/News/2011/geothermal-24oct2011'>here</a> and is a result of a grant funded by Google.org in collaboration with the Southern Methodist University Geothermal Laboratory.</p>",
+
+"<p>Heat flow refers to the movement of heat from the Earth’s interior to its surface. The majority of this heat or energy is a result of both the cooling of the Earth’s core and radioactive heat generation. Radioactive heat generation takes place in the upper 40 km of the crust and is the result of concentrations of naturally occurring elements such as thorium, potassium, and uranium. </p>" +
+"<p>Heat flow is calculated by measuring the change in temperature from the surface of the Earth to a distance into the crust. The gradient is then multiplied by the thermal conductivity (how efficiently the rock transfers thermal energy) of the rock. </p>" +
+"<p>Warmer values on the map represent high surface heat flow in milli watts (mW) per meter squared (m2), the standard unit of measure. Regional differences, such as the type of rock in the subsurface and recent tectonic events can all affect heat flow.</p>" +
+"<p>For more geothermal and heat flow related data resources please visit the National Geothermal Data System (NGDS).</p>"
+
+];
 // console.log(info_data[0])
 // toggle and switch
 
