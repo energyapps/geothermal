@@ -310,7 +310,7 @@ info box
 	line-height: 14px;
 	border-bottom: 0px !important;
 	color: rgb(68, 68, 68);
-		
+
 }
 
 .info-bar.active {
@@ -507,3 +507,7 @@ body.node-type-map #hawaii {
 	height: 50px;
 }
 
+.leaflet-popup-content p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}

@@ -64,6 +64,7 @@ legend
 		bottom: 0;
 		padding-top: 0;
 		padding-bottom: 10px;
+		font-size: 20px;
 	}
 }
 
@@ -73,6 +74,10 @@ legend
 		margin-top: 40px;
 	}
 	
+	#map div#title { 
+		padding-bottom: 5px;
+	}
+
 	.under-map-button {
 		border: 0;
 		margin-left: 2px;
