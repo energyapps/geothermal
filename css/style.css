@@ -371,6 +371,11 @@ a.mapbox-info-toggle.mapbox-icon.mapbox-icon-info {
 	padding-left: 10px;
 }
 
+#map div#title p {
+	font-size: 18px;
+	margin-bottom: 0px;
+}
+
 /*body.one-sidebar #map div#title { display: none;}*/
 
 
