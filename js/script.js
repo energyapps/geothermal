@@ -62,7 +62,7 @@ var markers = new L.MarkerClusterGroup({
       var myString = a.properties.Operationa;
       var year = myString.substr(0, myString.length-12);
       console.log(year);
-          marker.bindPopup('<h2>' + geo_plants.features[i].properties.PlantName + '</h2><p>Year Opened: ' + year + '</p>');
+          marker.bindPopup('<h2>' + a.properties.PlantName + '</h2><p>Year Opened: ' + year + '</p><p>Fluid Temperature: ' + a.properties.FluidTempe + ' C</p>');
           markers.addLayer(marker);
   }
 
@@ -83,7 +83,7 @@ var markers = new L.MarkerClusterGroup({
               // title: 'SUP'
           });
 
-          marker.bindPopup('<h2>' + points.features[i].properties.Project + '</h2><p>' + points.features[i].properties.Project_Ph + '</p>');
+          marker.bindPopup('<h2>' + a.properties.Project + '</h2><p>' + a.properties.Project_Ph + '</p>');
           markers.addLayer(marker);
         }
 
@@ -98,7 +98,7 @@ var markers = new L.MarkerClusterGroup({
               // title: 'SUP'
           });
 
-          marker.bindPopup('<h2>' + points.features[i].properties.Project + '</h2><p>' + points.features[i].properties.Project_Ph + '</p>');
+          marker.bindPopup('<h2>' + a.properties.Project + '</h2><p>' + a.properties.Project_Ph + '</p>');
           markers.addLayer(marker);
         }
         else if (a.properties.Project_Ph == "Phase 3") {
@@ -112,7 +112,7 @@ var markers = new L.MarkerClusterGroup({
               // title: 'SUP'
           });
 
-          marker.bindPopup('<h2>' + points.features[i].properties.Project + '</h2><p>' + points.features[i].properties.Project_Ph + '</p>');
+          marker.bindPopup('<h2>' + a.properties.Project + '</h2><p>' + a.properties.Project_Ph + '</p>');
           markers.addLayer(marker);
         }
 
@@ -127,7 +127,7 @@ var markers = new L.MarkerClusterGroup({
               // title: 'SUP'
           });
 
-          marker.bindPopup('<h2>' + points.features[i].properties.Project + '</h2><p>' + points.features[i].properties.Project_Ph + '</p>');
+          marker.bindPopup('<h2>' + a.properties.Project + '</h2><p>' + a.properties.Project_Ph + '</p>');
           markers.addLayer(marker);
         };
 
@@ -140,7 +140,8 @@ var markers = new L.MarkerClusterGroup({
 
 var info_data = [
 "<div id='info-box'>"+
-"        <div class='icon_box'>"+
+"      <div class='icon_box'>"+
+"        <h2>Phases of development for future geothermal plants</h2>" +
 "        <div class='icon_list'>"+
 "          <div class='icon_list_item'><img src='http://a.tiles.mapbox.com/v3/marker/pin-s-circle+D73619@2x.png'></div>"+
 "          <div class='icon_text'><p>Phase 1: Resource Procurement and Identification</p></div>"+

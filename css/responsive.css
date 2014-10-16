@@ -103,6 +103,21 @@ legend
 		top: 0px !important;
 		left: 0px;		
 		border-radius: 0;
+		padding-left: 5px;
+	}
+
+	#info-container p {
+		font-size: 10px;
+		line-height: 12px;
+	}
+
+	.icon_list_item {
+		width: 27px;
+	}
+
+	.icon_text	{
+		float: initial;
+		padding-top:1px;
 	}
 }
 

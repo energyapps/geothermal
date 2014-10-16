@@ -512,7 +512,12 @@ body.node-type-map #hawaii {
 	height: 50px;
 }
 
-.leaflet-popup-content p {
+.leaflet-popup-content h2 {
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+
+.leaflet-popup-content p {
+	margin-bottom: 0px;
+	margin-top: 0px;
 }
