@@ -1,0 +1,17 @@
+if (a.properties.Tech_Type == "Enhanced Geothermal Systems (EGS)") {
+	var techtype = '<p><a href="http://energy.gov/eere/geothermal/enhanced-geothermal-systems-0" target="_blank">Enhanced Geothermal Systems</a></p>'
+} else if (a.properties.Tech_Type == "Hydrocarbon Co-production (CoPro)") {
+	var techtype = '<p><a href="http://energy.gov/eere/geothermal/low-temperature-and-coproduced" target="_blank">Hydrocarbon Co-production</a></p>'
+};
+
+if (a.properties.Planned_Ca > 0) {
+	var capacity = '<p>Planned Capacity: ' + a.properties.Planned_Ca + ' MW</p>';
+};
+
+marker.bindPopup(
+	'<h2>' + a.properties.Project + '</h2>' + 
+	'<p>' + a.properties.Project_Ph + '</p>' +
+	'<p>' + a.properties.Developer + '</p>' + 
+	capacity + techtype
+	);
+          markers.addLayer(marker);
