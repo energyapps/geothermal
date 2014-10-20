@@ -110,7 +110,7 @@ var marker_symbol = 'star'
             console.log(a.properties.Tech_Type);
             var techtype = '<p><a href="http://energy.gov/eere/geothermal/low-temperature-and-coproduced" target="_blank">Hydrocarbon Co-production</a></p>'
           } else {
-            techtype = '';
+            techtype = '<p><a href="http://energy.gov/eere/geothermal/hydrothermal" target="_blank">Conventional Hydrothermal</a></p>';
           };
 
           if (a.properties.Planned_Ca > 0) {
