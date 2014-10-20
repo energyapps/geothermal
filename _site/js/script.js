@@ -104,9 +104,13 @@ var marker_symbol = 'star'
           });
 
           if (a.properties.Tech_Type == "Enhanced Geothermal Systems (EGS)") {
+            console.log(a.properties.Tech_Type);
             var techtype = '<p><a href="http://energy.gov/eere/geothermal/enhanced-geothermal-systems-0" target="_blank">Enhanced Geothermal Systems</a></p>'
           } else if (a.properties.Tech_Type == "Hydrocarbon Co-production (CoPro)") {
+            console.log(a.properties.Tech_Type);
             var techtype = '<p><a href="http://energy.gov/eere/geothermal/low-temperature-and-coproduced" target="_blank">Hydrocarbon Co-production</a></p>'
+          } else {
+            techtype = '';
           };
 
           if (a.properties.Planned_Ca > 0) {
