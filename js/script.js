@@ -1,3 +1,5 @@
+
+
 // Visit https://www.mapbox.com/mapbox.js/overview/ for documentation and examples
   var map = L.mapbox.map('map', 'energy.jlaen6p4', {
       detectRetina: true,
@@ -61,7 +63,7 @@ var markers = new L.MarkerClusterGroup({
           });
       var myString = a.properties.Operationa;
       var year = myString.substr(0, myString.length-12);
-      console.log(year);
+      // console.log(year);
           marker.bindPopup(
             '<h2>' + a.properties.PlantName + '</h2>' + 
             '<p>Owner: ' + a.properties.Owner + '</p>' +
@@ -104,10 +106,10 @@ var marker_symbol = 'star'
           });
 
           if (a.properties.Tech_Type == "Enhanced Geothermal Systems (EGS)") {
-            console.log(a.properties.Tech_Type);
+            // console.log(a.properties.Tech_Type);
             var techtype = '<p><a href="http://energy.gov/eere/geothermal/enhanced-geothermal-systems-0" target="_blank">Enhanced Geothermal Systems</a></p>'
           } else if (a.properties.Tech_Type == "Hydrocarbon Co-production (CoPro)") {
-            console.log(a.properties.Tech_Type);
+            // console.log(a.properties.Tech_Type);
             var techtype = '<p><a href="http://energy.gov/eere/geothermal/low-temperature-and-coproduced" target="_blank">Hydrocarbon Co-production</a></p>'
           } else {
             techtype = '<p><a href="http://energy.gov/eere/geothermal/hydrothermal" target="_blank">Conventional Hydrothermal</a></p>';

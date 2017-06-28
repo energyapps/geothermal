@@ -1,13 +1,19 @@
 ---
 layout: default
 ---
+<script type="text/javascript" src="js/pym.min.js"></script>
+<script type="text/javascript">
+// initates pym!
+var pymChild = new pym.Child();
+</script>
+
 <div id="iframe_container">
   <div id='map'>
     <div class="leaflet-top leaflet-right">
       <div style="top: 65px;" class="leaflet-control-zoom leaflet-bar leaflet-control">
-        <span id="usa" href=""><img src="/sites/prod/files/USRetina.png"></span>
-        <span id="hawaii" href=""><img src="/sites/prod/files/HawaiiRetina.png"></span>
-        <span id="alaska" href=""><img src="/sites/prod/files/AlaskaRetina.png"></span>
+        <span id="usa" href=""><img src="img/USRetina.png"></span>
+        <span id="hawaii" href=""><img src="img/HawaiiRetina.png"></span>
+        <span id="alaska" href=""><img src="img/AlaskaRetina.png"></span>
       </div>
     </div>  
     <div id="title">Geothermal Heat Flow and Existing Plants
